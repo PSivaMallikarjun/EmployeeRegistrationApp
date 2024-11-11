@@ -1,0 +1,12 @@
+﻿@model EmployeeRegistrationApp.Models.Employee
+
+<h1>Registration Successful!</h1>
+<p>Thankyou, @Model.Name, for registrating with the @Model.Department department.</p>
+<p>EmployeeId:@Model.EmployeeId</p>
+<p>Name:@Model.Name</p>
+<p>Email:@Model.Email</p>
+<p>Department:@Model.Department</p>
+<p>Position:@Model.Position</p>
+<p>Work Location:@Model.WorkLocation</p>
+<p>Status:@Model.Status</p>
+<a href="@Url.Action("Register", "Employee")" class=" btn btn-primary">Register Another Employee</a>
